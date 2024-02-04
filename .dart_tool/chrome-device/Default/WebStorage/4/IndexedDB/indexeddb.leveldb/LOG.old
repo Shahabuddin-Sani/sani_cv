@@ -1,0 +1,16 @@
+2024/02/03-03:21:22.029 740 Reusing MANIFEST C:\Users\CLICK\AppData\Local\Temp\flutter_tools.9cc5a0eb\flutter_tools_chrome_device.12f44f54\Default\WebStorage\4\IndexedDB\indexeddb.leveldb/MANIFEST-000001
+2024/02/03-03:21:22.030 740 Recovering log #29
+2024/02/03-03:21:22.030 740 Reusing old log C:\Users\CLICK\AppData\Local\Temp\flutter_tools.9cc5a0eb\flutter_tools_chrome_device.12f44f54\Default\WebStorage\4\IndexedDB\indexeddb.leveldb/000029.log 
+2024/02/03-03:21:22.031 740 Delete type=0 #3
+2024/02/03-03:21:22.031 740 Delete type=0 #4
+2024/02/03-03:21:22.031 740 Delete type=2 #5
+2024/02/03-03:21:22.031 740 Delete type=0 #7
+2024/02/03-03:21:22.031 740 Delete type=2 #8
+2024/02/03-03:21:22.031 740 Delete type=2 #12
+2024/02/03-03:21:22.031 740 Delete type=0 #13
+2024/02/03-03:21:22.032 740 Delete type=2 #15
+2024/02/03-03:21:22.032 740 Delete type=0 #17
+2024/02/03-03:21:22.032 740 Delete type=2 #19
+2024/02/03-03:21:22.032 740 Delete type=0 #24
+2024/02/03-03:21:22.032 740 Delete type=2 #27
+2024/02/03-03:21:22.047 740 Manual compaction at level-0 from '\x00\x0b\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0c\x00\x00\x00' @ 0 : 0; will stop at (end)
