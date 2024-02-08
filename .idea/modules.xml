@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/sani_cv.iml" filepath="$PROJECT_DIR$/sani_cv.iml" />
-      <module fileurl="file://$PROJECT_DIR$/android/sani_cv_android.iml" filepath="$PROJECT_DIR$/android/sani_cv_android.iml" />
-    </modules>
-  </component>
-</project>
