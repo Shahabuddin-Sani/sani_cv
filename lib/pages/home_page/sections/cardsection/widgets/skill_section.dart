@@ -5,38 +5,14 @@ import 'package:sani_cv/configs/app_theme.dart';
 import 'package:sani_cv/pages/home_page/sections/cardsection/widgets/models/skill.dart';
 
 List<Skill> skills = [
-  Skill(
-    skill: "Flutter",
-    percentage: 85,
-  ),
-  Skill(
-    skill: "Java",
-    percentage: 80,
-  ),
-  Skill(
-    skill: "Kotlin",
-    percentage: 70,
-  ),
-  Skill(
-    skill: "Python",
-    percentage: 80,
-  ),
-  Skill(
-    skill: "SpringBoot",
-    percentage: 60,
-  ),
-  Skill(
-    skill: "Flask",
-    percentage: 50,
-  ),
-  Skill(
-    skill: "Docker",
-    percentage: 70,
-  ),
-  Skill(
-    skill: "AdobeXD",
-    percentage: 80,
-  ),
+  Skill(skill: "Flutter", percentage: 85, knowledgeList: [""]),
+  Skill(skill: "Java", percentage: 80, knowledgeList: [""]),
+  Skill(skill: "Kotlin", percentage: 70, knowledgeList: [""]),
+  Skill(skill: "Python", percentage: 80, knowledgeList: [""]),
+  Skill(skill: "SpringBoot", percentage: 60, knowledgeList: [""]),
+  Skill(skill: "Flask", percentage: 50, knowledgeList: [""]),
+  Skill(skill: "Docker", percentage: 70, knowledgeList: [""]),
+  Skill(skill: "AdobeXD", percentage: 80, knowledgeList: [""]),
 ];
 
 class SkillSection extends StatelessWidget {
@@ -76,38 +52,43 @@ class SkillSection extends StatelessWidget {
                       .map(
                         (skill) => Container(
                           margin: EdgeInsets.only(bottom: 15.0),
-                          child: Row(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Expanded(
-                                flex: skill.percentage,
-                                child: Container(
-                                  padding: EdgeInsets.only(left: 10.0),
-                                  alignment: Alignment.centerLeft,
-                                  height: 38.0,
-                                  child: Text(skill.skill),
-                                  color: Colors.white,
-                                ),
+                              Row(
+                                children: [
+                                  Expanded(
+                                    flex: skill.percentage,
+                                    child: Container(
+                                      padding: EdgeInsets.only(left: 10.0),
+                                      alignment: Alignment.centerLeft,
+                                      height: 38.0,
+                                      child: Text(skill.skill),
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 10.0,
+                                  ),
+                                  Expanded(
+                                    // remaining (blank part)
+                                    flex: 100 - skill.percentage,
+                                    child: Divider(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 10.0,
+                                  ),
+                                  Text(
+                                    "${skill.percentage}%",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 16.0,
+                                    ),
+                                  )
+                                ],
                               ),
-                              SizedBox(
-                                width: 10.0,
-                              ),
-                              Expanded(
-                                // remaining (blank part)
-                                flex: 100 - skill.percentage,
-                                child: Divider(
-                                  color: Colors.white,
-                                ),
-                              ),
-                              SizedBox(
-                                width: 10.0,
-                              ),
-                              Text(
-                                "${skill.percentage}%",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 16.0,
-                                ),
-                              )
                             ],
                           ),
                         ),

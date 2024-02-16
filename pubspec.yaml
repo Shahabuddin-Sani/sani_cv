@@ -41,7 +41,7 @@ dependencies:
   flip_card:
   flutter_animate:
   google_fonts:
-  timeline_tile: ^2.0.0
+  just_the_tooltip: ^0.0.12
 
   # state management
   provider:

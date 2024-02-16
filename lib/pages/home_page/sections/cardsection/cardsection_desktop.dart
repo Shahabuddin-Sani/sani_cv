@@ -58,15 +58,37 @@ class _CardsectionDesktopState extends State<CardsectionDesktop> {
                 Expanded(
                     flex: 1,
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         SizedBox(
-                          height: 16.0,
+                          height: 65.0,
                         ),
                         EducationSection(),
                         SizedBox(
                           height: 10.0,
                         ),
                         SkillSection(),
+                        SizedBox(
+                          height: 40,
+                        ),
+                        Container(
+                          child: Text(
+                            "Work Activities & Projects",
+                            textAlign: TextAlign.start,
+                            style: GoogleFonts.oswald(
+                              color: AppTheme.c!.textSub2,
+                              fontWeight: FontWeight.w900,
+                              fontSize: 30.0,
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          height: 16,
+                        ),
+                        ProjectSection(),
+                        SizedBox(
+                          height: 40,
+                        ),
                       ],
                     )),
               ],
@@ -74,37 +96,6 @@ class _CardsectionDesktopState extends State<CardsectionDesktop> {
             SizedBox(
               height: 40,
             ),
-            Container(
-              child: Text(
-                "Work Activities & Projects",
-                style: GoogleFonts.oswald(
-                  color: AppTheme.c!.textSub2,
-                  fontWeight: FontWeight.w900,
-                  fontSize: 30.0,
-                ),
-              ),
-            ),
-            SizedBox(
-              height: 16,
-            ),
-            ProjectSection(),
-            SizedBox(
-              height: 40,
-            ),
-            Container(
-              child: Text(
-                "ShowCase Portfolio",
-                style: GoogleFonts.oswald(
-                  color: AppTheme.c!.gradient1,
-                  fontWeight: FontWeight.w900,
-                  fontSize: 30.0,
-                ),
-              ),
-            ),
-            SizedBox(
-              height: 16,
-            ),
-            ProjectSection(),
             Footer(),
           ]),
     );

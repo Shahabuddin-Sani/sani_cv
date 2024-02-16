@@ -15,32 +15,21 @@ class ProjectSection extends StatelessWidget {
       for (int i = 0; i < features.length; i++)
         _buildWidget(features[i], 350 + (50 * i)),
     ];
-    return IntrinsicGridView.vertical(
-        columnCount: 4,
-        backgroundColor: AppTheme.c!.primary!,
-        padding: EdgeInsets.all(8),
-        // rowCount: 1,
-        verticalSpace: 0,
-        horizontalSpace: 0,
-        children: buildWidgets);
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(15),
+      child: IntrinsicGridView.vertical(
+          columnCount: 2,
+          backgroundColor: AppTheme.c!.primary!,
+          padding: EdgeInsets.all(8),
+          // rowCount: 1,
+          verticalSpace: 0,
+          horizontalSpace: 0,
+          children: buildWidgets),
+    );
   }
 
   List<Projects> fetchFeatureList(BuildContext context2) {
     return <Projects>[
-      Projects(
-          name: "Pinoy Parent",
-          description:
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
-          client: "Save The Children",
-          clientLogo: "assets/photos/shurjo.png",
-          technology: "technology",
-          features: "features",
-          noOfCollegues: "noOfCollegues",
-          platformLogos: [
-            "assets/photos/flutter.png",
-            "assets/photos/android.png",
-            "assets/photos/ios.png"
-          ]),
       Projects(
           name: "Pinoy Parent",
           description:

@@ -158,7 +158,7 @@ class _CarouselState extends State<Carousel> {
                               height: 10.0,
                             ),
                             Text(
-                              "Full-stack developer, based in Dhaka Bangladesh",
+                              "As a Mobile Application Developer, I offer a diverse array of experiences to draw upon. My journey in development has taken me through various landscapes, spanning from the realms of animation and gaming to the impactful domains of non-governmental organizations (NGOs) and financial technology (Fintech)",
                               style: TextStyle(
                                 color: Colors.black,
                                 fontSize: 15.0,
@@ -167,34 +167,6 @@ class _CarouselState extends State<Carousel> {
                             ),
                             SizedBox(
                               height: 10.0,
-                            ),
-                            Container(
-                              child: Wrap(
-                                children: [
-                                  Text(
-                                    "Need a full custom website?",
-                                    style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 15.0,
-                                      height: 1.5,
-                                    ),
-                                  ),
-                                  GestureDetector(
-                                    onTap: () {},
-                                    child: MouseRegion(
-                                      cursor: SystemMouseCursors.click,
-                                      child: Text(
-                                        " Got a project? Let's talk.",
-                                        style: TextStyle(
-                                          height: 1.5,
-                                          color: AppTheme.c!.textSub2,
-                                          fontSize: 15.0,
-                                        ),
-                                      ),
-                                    ),
-                                  )
-                                ],
-                              ),
                             ),
                             PortfolioStats(),
                             SizedBox(

@@ -5,7 +5,7 @@ class AppTheme {
   static final _core = AppCoreTheme(
     shadowSub: const Color(0xfff85606).withAlpha(100),
     primary: Color(0xFF872341),
-    primaryLight: Color.fromARGB(255, 248, 131, 72).withAlpha(100),
+    primaryLight: Color(0xFFF88348).withAlpha(100),
     textSub: const Color(0xff141414),
     textSub2: const Color(0xff776B5D),
     gradient1: Color(0xFFF3EEEA),

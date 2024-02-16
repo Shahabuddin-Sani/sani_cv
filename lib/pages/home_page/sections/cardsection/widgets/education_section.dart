@@ -50,24 +50,15 @@ class EducationSection extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Text(
-                    "EDUCATION",
-                    style: GoogleFonts.oswald(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w900,
-                      fontSize: 30.0,
-                      height: 1.3,
-                    ),
-                  ),
                   SizedBox(
                     height: 5.0,
                   ),
                   SizedBox(
-                    height: 20.0,
+                    height: 4.0,
                   ),
                   Column(
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -115,7 +106,7 @@ class EducationSection extends StatelessWidget {
                                   ),
                                 ),
                                 SizedBox(
-                                  height: 20.0,
+                                  height: 4.0,
                                 )
                               ],
                             ),
