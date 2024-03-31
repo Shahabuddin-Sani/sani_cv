@@ -7,14 +7,14 @@ final List<FooterItem> footerItems = [
   FooterItem(
     iconPath: "assets/photos/map.png",
     title: "ADDRESS",
-    text1: "999 Carter Street",
-    text2: "Sailor Springs, IL 64234",
+    text1: "Shewrapara Mirpur",
+    text2: "Dhaka 1216 Bangladesh",
   ),
   FooterItem(
     iconPath: "assets/photos/phone.png",
     title: "PHONE",
     text1: "+880-1957205274",
-    text2: "+880-1819131372",
+    text2: " ",
   ),
   FooterItem(
     iconPath: "assets/photos/email.png",
@@ -22,12 +22,6 @@ final List<FooterItem> footerItems = [
     text1: "sani.shahabuddin@gmail.com",
     text2: "kiwi123crow@gmail.com",
   ),
-  FooterItem(
-    iconPath: "assets/photos/whatsapp.png",
-    title: "WHATSAPP",
-    text1: "+880-1957205274",
-    text2: "+880-1819131372",
-  )
 ];
 
 class Footer extends StatelessWidget {
@@ -44,74 +38,8 @@ Widget _buildUi() {
     child: LayoutBuilder(
       builder: (context, constraints) {
         return Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Padding(
-              padding: EdgeInsets.symmetric(vertical: 50.0),
-              child: Wrap(
-                spacing: 20.0,
-                runSpacing: 20.0,
-                children: footerItems
-                    .map(
-                      (footerItem) => Container(
-                        height: 120.0,
-                        width: constraints.maxWidth / 4.0 - 20.0,
-                        child: Container(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                children: [
-                                  Image.asset(
-                                    footerItem.iconPath,
-                                    width: 25.0,
-                                    color: Colors.white,
-                                  ),
-                                  SizedBox(
-                                    width: 15.0,
-                                  ),
-                                  Text(
-                                    footerItem.title,
-                                    style: GoogleFonts.oswald(
-                                      fontSize: 18.0,
-                                      fontWeight: FontWeight.w700,
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 15.0,
-                              ),
-                              RichText(
-                                textAlign: TextAlign.start,
-                                text: TextSpan(
-                                  children: [
-                                    TextSpan(
-                                      text: "${footerItem.text1}\n",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        height: 1.8,
-                                      ),
-                                    ),
-                                    TextSpan(
-                                      text: "${footerItem.text2}\n",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                      ),
-                    )
-                    .toList(),
-              ),
-            ),
             SizedBox(
               height: 20.0,
             ),

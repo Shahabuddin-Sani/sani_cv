@@ -1,3 +1,4 @@
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:sani_cv/pages/home_page/body/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:sani_cv/provider/app_provider.dart';
@@ -6,6 +7,7 @@ import 'package:sani_cv/provider/scroll_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:url_strategy/url_strategy.dart';
 import 'package:sani_cv/configs/core_theme.dart' as theme;
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -63,11 +65,19 @@ class _MaterialChildState extends State<MaterialChild> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Welcome To My CV',
+      title: 'Shahabuddin Sani',
       theme: theme.themeLight,
       darkTheme: theme.themeDark,
       themeMode: widget.provider.themeMode,
       home: const AuthWrapper(),
+      locale: Locale("en"),
+      supportedLocales: [Locale("en")],
+      localizationsDelegates: [
+        AppLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate
+      ],
       routes: {
         "/home": (context) => const HomePage(),
       },

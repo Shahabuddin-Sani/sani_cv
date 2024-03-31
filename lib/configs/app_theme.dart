@@ -4,22 +4,23 @@ import 'app_core_theme.dart';
 class AppTheme {
   static final _core = AppCoreTheme(
     shadowSub: const Color(0xfff85606).withAlpha(100),
-    primary: Color(0xFF872341),
+    primary: Color(0xFFA86726),
     primaryLight: Color(0xFFF88348).withAlpha(100),
     textSub: const Color(0xff141414),
     textSub2: const Color(0xff776B5D),
     gradient1: Color(0xFFF3EEEA),
     gradient2: const Color(0xFFEBE3D5),
+ 
   );
 
   static AppCoreTheme light = _core.copyWith(
-    primary: Color(0xFF872341),
+    primary: Color.fromARGB(255, 181, 115, 50),
     background: const Color(0xfff5f5f5),
     backgroundSub: const Color(0xff776B5D),
     scaffold: const Color(0xfffefefe),
     scaffoldDark: const Color(0xfffcfcfc),
-    text: const Color(0xff484848),
-    textSub2: const Color(0xff776B5D),
+    text: const Color(0xff71706E),
+    textSub2: const Color(0xff71706E),
   );
 
   static AppCoreTheme dark = _core.copyWith(

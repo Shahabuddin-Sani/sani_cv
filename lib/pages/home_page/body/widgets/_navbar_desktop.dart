@@ -41,119 +41,202 @@ class _NavbarDesktopState extends State<_NavbarDesktop> {
                     child: Container(
                   width: 1,
                 )),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.home,
-                      size: 24,
-                      color: Colors.white,
-                    ),
-                    SizedBox(
-                      width: 5,
-                    ),
-                    Text(
-                      "Home",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 12,
-                          fontWeight: FontWeight.bold),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        width: 1,
-                        height: 12,
-                        color: Colors.white,
-                      ),
-                    )
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Text(
-                      "Work Experience",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 12,
-                          fontWeight: FontWeight.bold),
-                    ),
-                    SizedBox(
-                      width: 5,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        width: 1,
-                        height: 12,
-                        color: Colors.white,
-                      ),
-                    )
-                  ],
-                ),
-                Row(
-                  children: [
-                    Text(
-                      "Projects",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 12,
-                          fontWeight: FontWeight.bold),
-                    ),
-                    SizedBox(
-                      width: 5,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        width: 1,
-                        height: 12,
-                        color: Colors.white,
-                      ),
-                    )
-                  ],
-                ),
-                Row(
-                  children: [
-                    Text(
-                      "Proficiency",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 12,
-                          fontWeight: FontWeight.bold),
-                    ),
-                    SizedBox(
-                      width: 5,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        width: 1,
-                        height: 12,
-                        color: Colors.white,
-                      ),
-                    )
-                  ],
-                ),
-                Switch(
-                  inactiveTrackColor: Colors.grey,
-                  value: appProvider.isDark,
-                  onChanged: (value) {
-                    appProvider.setTheme(
-                      !value ? ThemeMode.light : ThemeMode.dark,
-                    );
+                InkWell(
+                  onTap: () {
+                    scrollProvider.scroll(0);
                   },
-                  activeColor: AppTheme.c!.primary!,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.home,
+                        size: 24,
+                        color: Colors.white,
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Text(
+                        "Home",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                          width: 1,
+                          height: 12,
+                          color: Colors.white,
+                        ),
+                      )
+                    ],
+                  ),
                 ),
+                InkWell(
+                  onTap: () {
+                    scrollProvider.scroll(1);
+                  },
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Work Experience",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                          width: 1,
+                          height: 12,
+                          color: Colors.white,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+                InkWell(
+                  onTap: () {
+                    scrollProvider.scroll(2);
+                  },
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Skills",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                          width: 1,
+                          height: 12,
+                          color: Colors.white,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+                InkWell(
+                  onTap: () {
+                    scrollProvider.scroll(3);
+                  },
+                  child: Row(
+                    children: [
+                      Text(
+                        "Education",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                          width: 1,
+                          height: 12,
+                          color: Colors.white,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+                InkWell(
+                  onTap: () {
+                    scrollProvider.scroll(4);
+                  },
+                  child: Row(
+                    children: [
+                      Text(
+                        "Proficiency",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                          width: 1,
+                          height: 12,
+                          color: Colors.white,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+
+                InkWell(
+                  onTap: () {
+                    scrollProvider.scroll(5);
+                  },
+                  child: Row(
+                    children: [
+                      Text(
+                        "Projects",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                          width: 1,
+                          height: 12,
+                          color: Colors.white,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+                // Switch(
+                //   inactiveTrackColor: Colors.grey,
+                //   value: appProvider.isDark,
+                //   onChanged: (value) {
+                //     appProvider.setTheme(
+                //       !value ? ThemeMode.light : ThemeMode.dark,
+                //     );
+                //   },
+                //   activeColor: AppTheme.c!.primary!,
+                // ),
               ],
             ),
           ),
         ],
       ),
-    );
+    ).animate(
+      onPlay: (controller) {
+        controller.repeat();
+      },
+    ).shimmer(
+        duration: 6400.ms,
+        color: Color.fromARGB(255, 255, 252, 102).withOpacity(.25));
   }
 }
 

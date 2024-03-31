@@ -41,13 +41,15 @@ dependencies:
   flip_card:
   flutter_animate:
   google_fonts:
-  just_the_tooltip: ^0.0.12
-
-  # state management
+  image_sequence_animator: ^2.0.0
   provider:
+  marquee: ^2.2.3
 
   # cache
   shared_preferences: ^2.0.6
+  flutter_localizations:
+    sdk: flutter
+  intl: any
 
 dev_dependencies:
   flutter_test:
@@ -60,10 +62,11 @@ dev_dependencies:
 # The following section is specific to Flutter.
 flutter:
   uses-material-design: true
-
+  generate: true
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/photos/
+    - assets/animation/
     - assets/
 
   fonts:

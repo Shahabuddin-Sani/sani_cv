@@ -7,10 +7,22 @@ class _BodyDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final scrollProvider = Provider.of<ScrollProvider>(context);
-    return ListView.builder(
-      controller: scrollProvider.controller,
-      itemCount: SectionTree.views.length,
-      itemBuilder: (context, index) => SectionTree.views[index],
+    return NotificationListener<ScrollNotification>(
+      onNotification: (scrollNotification) {
+        if (scrollNotification.metrics.pixels > 180.00) {
+          scrollProvider.setIsOnTop(false);
+        } else {
+          scrollProvider.setIsOnTop(true);
+        }
+        // print(
+        //     "Sani" + "${scrollNotification.metrics.pixels}"); // <-- This is it.
+        return false;
+      },
+      child: ListView.builder(
+        controller: scrollProvider.controller,
+        itemCount: SectionTree.views.length,
+        itemBuilder: (context, index) => SectionTree.views[index],
+      ),
     );
   }
 }

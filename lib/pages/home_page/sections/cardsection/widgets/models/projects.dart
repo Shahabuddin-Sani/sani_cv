@@ -8,6 +8,7 @@ class Projects {
   final String technology;
   final String features;
   final String noOfCollegues;
+  final String links;
   final List<String> platformLogos;
 
   Projects({
@@ -19,5 +20,6 @@ class Projects {
     required this.features,
     required this.noOfCollegues,
     required this.platformLogos,
+    required this.links,
   });
 }
